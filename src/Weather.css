@@ -34,10 +34,13 @@
 
 }
 
-.Weather img {
+.Weather canvas {
     height: 64px;
     flex-direction:column;
-    width: 64px;
+    width: 75px;
+    top: 25px;
+    position: relative;
+    margin-top: 5px;
 }
 
 .Weather .temperature {
