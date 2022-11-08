@@ -13,15 +13,18 @@ export default function App() {
     href="https://github.com/sunnys-codes/react-weather-app"
     rel="noopener noreferrer"target="_blank"
   >
-
-  open-sourced on Github
-  </a>
-  </footer>
-  </div>
-   </div>
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://merry-frangipane-77e439.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
+    </div>
   );
- 
- 
 }
-
-
