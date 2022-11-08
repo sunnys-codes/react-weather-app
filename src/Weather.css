@@ -35,12 +35,8 @@
 }
 
 .Weather canvas {
-    height: 64px;
-    flex-direction:column;
-    width: 75px;
-    top: 25px;
-    position: relative;
-    margin-top: 5px;
+    margin: 10px auto;
+    
 }
 
 .Weather .temperature {
@@ -60,10 +56,6 @@
     font-weight: 400;
     position: relative;
     line-height: 1;
-    top: -10px;
+    top: 10px;
     margin-left: 5px;
-}
-
-.Wetaher .btn {
-    color: #B48CB8;
 }

@@ -16,35 +16,36 @@ export default function WeatherForecast(props) {
     setLoaded(true);
   }
 
-  function load() {
+  function load () {
     let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}appid=${apiKey}&units=imperial`
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+
     axios.get(apiUrl).then(handleResponse);
-}
+  }
 
-if (loaded) {
-  return (
-    <div className="WeatherForecast">
-      <div className="row">
-        {forecast.map(function (dailyForecast, index) {
-          if (index < 5) {
-            return (
-              <div className="col" key={index}>
-                <WeatherForecastDay data={dailyForecast} />
-              </div>
-            );
-          } else {
-            return null;
-          }
-        })}
+  if (loaded) {
+    return (
+      <div className="WeatherForecast">
+        <div className="row">
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 5) {
+              return (
+                <div className="col" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </div>
       </div>
-    </div>
-  );
-} else {
-  load();
+    );
+  } else {
+   load();
 
-  return null;
-}
+    return null;
+  }
 }
