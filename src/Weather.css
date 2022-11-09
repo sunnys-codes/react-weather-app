@@ -6,6 +6,7 @@
     margin: 30px auto;
     border-radius: 4px;
     background-image: linear-gradient(180deg,  #B98CB8, #605F91);
+    opacity: 0.7;
     
 }
 
@@ -58,4 +59,19 @@
     line-height: 1;
     top: 10px;
     margin-left: 5px;
+}
+
+.Weather .btn {
+    color: #302030;
+    background: #d58cd5;
+    border: #351035;
+    border-radius: 50% 50% 5 5;
+}
+
+.Weather .btn:hover {
+    font-size: 16px;
+    opacity: 0.5;
+    background: linear-gradient(#eddded, #dec4db);
+    opacity: 0.5;
+    border: #d466d4;
 }

@@ -9,3 +9,9 @@
     right:100px; 
     top:3px;
 }
+
+.weather-climate {
+    position:relative;
+    left:80px; 
+    top:20px;
+}
