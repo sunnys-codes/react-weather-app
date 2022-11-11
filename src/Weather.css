@@ -51,13 +51,13 @@
     flex-direction: column-reverse;
 }
 
-.Weather .units {
+.unit {
     color: rgb(33, 33, 33);
     font-size: 16px;
     font-weight: 400;
     position: relative;
     line-height: 1;
-    top: 10px;
+    top: -10px;
     margin-left: 5px;
 }
 
